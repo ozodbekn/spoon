@@ -1,0 +1,35 @@
+.hero {
+  width: 100%;
+  height: 582px;
+  color: white;
+  text-align: center;
+  margin: 120px auto;
+  &__title {
+    font-size: 71px;
+  }
+  &__description {
+    font-size: 13px;
+    margin-top: 30px;
+  }
+  &__btn {
+    margin-top: 75px;
+    width: 160px;
+    height: 60px;
+    border-radius: 5px;
+    background: #5ab963;
+  }
+  &__btn:hover {
+    border: 2px white solid;
+    border-radius: 3px;
+  }
+
+  @media (max-width: 500px) {
+    .hero {
+      &__title {
+        font-size: 30px;
+
+        
+      }
+    }
+  }
+}

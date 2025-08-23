@@ -1,0 +1,49 @@
+header {
+  width: 100%;
+  background: url("../assets/hero.jpg") no-repeat center/cover;
+  min-height: 582px;
+  overflow-x: hidden;
+}
+
+.navbar {
+  height: 90px;
+  margin: 0 auto;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__lists {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 40px;
+    margin-left: auto;
+    padding: 0 16x;
+  }
+
+  &__list {
+    color: white;
+    padding: 16px 15px;
+    white-space: nowrap;
+  }
+
+  &__list:hover {
+    outline: 2px solid white;
+    border-radius: 3px;
+    flex: 0 0 auto; 
+  }
+  @media (max-width: 850px) {
+    .navbar {
+      width: 100%;
+      &__lists {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+      }
+      &__list {
+        white-space: nowrap;
+      }
+    }
+  }
+}
